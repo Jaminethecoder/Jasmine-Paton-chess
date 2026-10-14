@@ -140,3 +140,30 @@ h3 { font-size: 1.55rem; margin: 13px 0 10px; }
   .footer-inner { flex-direction: column; text-align: center; gap: 14px; }.footer-brand { justify-content: center; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; } }
+.tournament-layout {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 40px;
+align-items: center;
+}
+
+.tournament-art img {
+display: block;
+width: 100%;
+max-width: 420px;
+height: auto;
+margin: 0 auto;
+border-radius: 22px;
+object-fit: contain;
+}
+
+@media (max-width: 720px) {
+.tournament-layout {
+grid-template-columns: 1fr;
+gap: 24px;
+}
+
+.tournament-art img {
+max-width: 100%;
+}
+}
