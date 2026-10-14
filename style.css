@@ -152,3 +152,19 @@ h3 { font-size: 1.55rem; margin: 13px 0 10px; }
   border-radius: 22px;
   object-fit: contain;
 }
+
+
+/* Jasmine portrait image */
+.about-avatar {
+  overflow: hidden;
+}
+.jasmine-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+.about-avatar .avatar-star {
+  z-index: 2;
+}
