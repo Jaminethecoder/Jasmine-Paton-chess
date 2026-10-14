@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Friendly, in-person chess lessons and junior tournaments with Jasmine Paton. Build confidence, learn new ideas, and enjoy the game." />
+  <title>Jasmine Paton Chess | Learn, Play, Grow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">
+    <span class="announcement-dot"></span>
+    Big ideas start with one move. Let’s learn chess together!
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Jasmine Paton Chess home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" role="img" aria-label="">
+          <rect x="4" y="4" width="56" height="56" rx="17" fill="#DFF5FF"/>
+          <path d="M20 46h27v5H17v-4l5-3-3-4 4-5 1-9c1-8 8-13 17-12l-2 8 7 6-2 8 4 10H20z" fill="#17345B"/>
+          <circle cx="39" cy="21" r="2" fill="#FFD65A"/>
+          <path d="M28 48l-4-7 5-4 1-7" fill="none" stroke="#FFD65A" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand-copy"><strong>Jasmine Paton</strong><small>CHESS CLUB</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="siteNav">
+      <a href="#lessons">Lessons</a>
+      <a href="#tournaments">Junior tournaments</a>
+      <a href="#about">About</a>
+      <a class="nav-cta" href="#booking">Request a lesson <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-icon">♟</span> CHESS FOR CURIOUS MINDS</div>
+        <h1>Think big.<br><span class="highlight">Make your move.</span></h1>
+        <p class="hero-intro">Friendly, in-person chess lessons and junior tournaments that help young players build skills, confidence, and a love of the game.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#booking">Request a lesson <span aria-hidden="true">→</span></a>
+          <a class="button button-quiet" href="#lessons">Explore lessons</a>
+        </div>
+        <div class="hero-notes">
+          <span><span class="check">✓</span> In-person learning</span>
+          <span><span class="check">✓</span> Welcoming for juniors</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a chessboard and chess pieces">
+        <div class="sunburst"></div>
+        <div class="float-chip chip-one">YOUR NEXT MOVE ✨</div>
+        <div class="float-chip chip-two">LEARN • PLAY • GROW</div>
+        <div class="chess-board" aria-hidden="true">
+          <div class="board-grid">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <span class="piece piece-knight">♞</span>
+          <span class="piece piece-king">♔</span>
+          <span class="piece piece-pawn">♟</span>
+          <span class="move-arrow">↗</span>
+        </div>
+        <div class="hero-sparkle sparkle-a">✦</div><div class="hero-sparkle sparkle-b">✦</div>
+      </div>
+    </section>
+
+    <section class="value-strip section-wrap" aria-label="What students can expect">
+      <div class="value-item"><span class="value-icon blue">♙</span><div><strong>Build confidence</strong><small>One smart move at a time</small></div></div>
+      <div class="value-item"><span class="value-icon yellow">✦</span><div><strong>Learn by playing</strong><small>Practical, engaging lessons</small></div></div>
+      <div class="value-item"><span class="value-icon mint">♜</span><div><strong>Have fun together</strong><small>A welcoming chess community</small></div></div>
+    </section>
+
+    <section class="section-wrap section-block" id="lessons">
+      <div class="section-heading">
+        <div class="eyebrow">THE LESSON EXPERIENCE</div>
+        <h2>Every player can <span class="highlight">grow.</span></h2>
+        <p>Whether the rules are brand new or your child is ready for their next challenge, lessons are shaped around their level and goals.</p>
+      </div>
+      <div class="lesson-grid">
+        <article class="lesson-card card-blue">
+          <div class="card-art art-board"><span>♟</span><span>♞</span><span>♙</span></div>
+          <div class="card-body"><span class="pill pill-blue">START HERE</span><h3>Beginner lessons</h3><p>Learn how the pieces move, spot checkmate, and discover the basics through friendly, hands-on practice.</p><ul><li>Rules and piece movement</li><li>Checks, checkmates, and tactics</li><li>Confidence at the board</li></ul></div>
+        </article>
+        <article class="lesson-card card-yellow">
+          <div class="card-art art-lightbulb"><span>✦</span><b>IDEAS!</b><span>✦</span></div>
+          <div class="card-body"><span class="pill pill-yellow">LEVEL UP</span><h3>Developing players</h3><p>Build stronger habits and learn how to turn good ideas into a plan during a game.</p><ul><li>Tactical patterns and calculation</li><li>Opening principles and strategy</li><li>Reviewing games and learning why</li></ul></div>
+        </article>
+        <article class="lesson-card card-mint">
+          <div class="card-art art-trophy"><span>🏆</span><span class="confetti">✦</span></div>
+          <div class="card-body"><span class="pill pill-mint">KEEP IMPROVING</span><h3>Tournament preparation</h3><p>Get ready to play with a clear head, thoughtful routines, and a plan for learning from every result.</p><ul><li>Practice positions and game review</li><li>Clock and tournament habits</li><li>Preparation matched to your goals</li></ul></div>
+        </article>
+      </div>
+      <p class="small-note"><span>ℹ</span> Lessons are in person only. Submit a request and Jasmine will follow up to discuss goals, availability, and arrangements.</p>
+    </section>
+
+    <section class="tournament-section" id="tournaments">
+      <div class="section-wrap tournament-layout">
+        <div class="tournament-art">
+          <div class="trophy-circle"><span>🏆</span></div>
+          <div class="mini-piece mini-one">♞</div><div class="mini-piece mini-two">♟</div>
+          <div class="confetti-dot dot-one"></div><div class="confetti-dot dot-two"></div><div class="confetti-dot dot-three"></div>
+        </div>
+        <div class="tournament-copy">
+          <div class="eyebrow">READY, SET, CHECKMATE!</div>
+          <h2>Junior tournaments.<br><span class="highlight">Big learning moments.</span></h2>
+          <p>Tournaments give young players a chance to put their skills into practice, meet other chess fans, and discover what they can do under pressure.</p>
+          <div class="tournament-points">
+            <div><span class="round-icon">♟</span><p><strong>Play with purpose</strong><small>Practice focus, patience, and decision-making.</small></p></div>
+            <div><span class="round-icon">★</span><p><strong>Learn from every game</strong><small>Celebrate progress and find the next thing to work on.</small></p></div>
+            <div><span class="round-icon">♔</span><p><strong>Find your chess people</strong><small>Enjoy a friendly, encouraging chess environment.</small></p></div>
+          </div>
+          <a class="button button-primary" href="#booking">Ask about junior events <span aria-hidden="true">→</span></a>
+          <p class="small-note">Event dates, locations, and registration details will be shared when available.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block about-section" id="about">
+      <div class="about-card">
+        <div class="about-avatar"><span>♘</span><div class="avatar-star">✦</div></div>
+        <div class="about-copy">
+          <div class="eyebrow">MEET YOUR CHESS COACH</div>
+          <h2>Hi, I’m Jasmine!</h2>
+          <p>I want chess to feel welcoming, exciting, and full of possibilities. Lessons focus on helping each student understand the game, ask questions, and enjoy the process of improving.</p>
+          <p class="about-note">Have a beginner at home or a junior who wants to take the next step? Tell me a little about them in the form below.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-section" id="booking">
+      <div class="section-wrap booking-layout">
+        <div class="booking-copy">
+          <div class="eyebrow">LET’S GET STARTED</div>
+          <h2>Make your <span class="highlight">next move.</span></h2>
+          <p>Send a lesson request and Jasmine will get back to you to talk through the best fit. This is a request only—not a confirmed booking.</p>
+          <div class="contact-card"><span class="contact-icon">✉</span><div><small>EMAIL</small><strong>Jasmineleahp@gmail.com</strong></div></div>
+          <div class="contact-card"><span class="contact-icon">♟</span><div><small>LESSON FORMAT</small><strong>In-person only</strong></div></div>
+        </div>
+        <form class="booking-form" id="bookingForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+          <div class="form-top"><div><span class="form-step">LESSON ENQUIRY</span><h3>Request a lesson</h3></div><span class="form-piece">♞</span></div>
+          <input type="hidden" name="_subject" value="New chess lesson request — Jasmine Paton Chess">
+          <div class="form-row">
+            <label>Parent / guardian name <input type="text" name="parent_name" placeholder="Your name" autocomplete="name" required></label>
+            <label>Email address <input type="email" name="email" placeholder="you@example.com" autocomplete="email" required></label>
+          </div>
+          <div class="form-row">
+            <label>Student’s first name <input type="text" name="student_name" placeholder="Student’s name" required></label>
+            <label>Student’s age <input type="number" name="student_age" placeholder="Age" min="3" max="18" required></label>
+          </div>
+          <label>Chess experience
+            <select name="experience" required>
+              <option value="" disabled selected>Select a level</option>
+              <option>Brand new to chess</option>
+              <option>Knows the rules and wants to improve</option>
+              <option>Plays regularly / has a rating</option>
+              <option>Interested in tournament preparation</option>
+            </select>
+          </label>
+          <label>What would you like help with? <textarea name="goals" rows="4" placeholder="Tell Jasmine about the student’s goals, experience, or any questions…"></textarea></label>
+          <label>Preferred days or times <input type="text" name="availability" placeholder="e.g. weekday afternoons or weekends"></label>
+          <label class="consent"><input type="checkbox" name="in_person_acknowledgement" value="Yes, in-person lessons" required><span>I understand lessons are in person and this form sends a request, not a confirmed booking.</span></label>
+          <button class="button button-primary form-submit" type="submit">Send lesson request <span aria-hidden="true">→</span></button>
+          <p class="form-footnote">Your information is used to respond to this enquiry. Please do not include sensitive personal details.</p>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-wrap footer-inner">
+      <a class="brand footer-brand" href="#home"><span class="brand-mark"><span>♞</span></span><span class="brand-copy"><strong>Jasmine Paton</strong><small>CHESS CLUB</small></span></a>
+      <p>Learn a little. Play a lot. Keep growing. <span>♟</span></p>
+      <span class="copyright">© <span id="year"></span> Jasmine Paton Chess</span>
+    </div>
+  </footer>
+</body>
+</html>
